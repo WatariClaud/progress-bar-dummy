@@ -17,6 +17,9 @@ const showProgress = () => {
         _alert.classList.remove('d-none');
         _alert.style.background = "green";
         _alert.textContent = `Creating your blog: ${width * 1 }%`;
+        if(width === 100) {
+            _alert.textContent = 'Your blog is ready to view.'
+        }
       }
     }
   }
