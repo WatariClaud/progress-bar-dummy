@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="./style.css">
+<title>Progress bar</title>
+
+<div id = "alert-container" class = "d-none">
+    <div id = "progress-bar"></div>
+</div>
+<div id = "container">
+    <h3>Vice Inc - Add Blog</h3>
+    <form id = "emulate-form dummy-form">
+        <div class = "input-row">
+            <label for="file-input" class = "label-for">Add photo</label><br/>
+            <input id = "file-input" type="file" class= "d-none">
+        </div>
+        <div class = "input-row">
+            <label for="input-one">Blog name</label><br/>
+            <input name = "name" id = "input-one" type="text" class = "inputfield" placeholder = "Enter name for your blog"/>
+        </div>
+        <div class = "input-row">
+            <label for="input-county">County</label><br/>
+            <select name="county" id="input-county" required>
+                <option value="null" disabled selected>Select county</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Nairobi">Nyandarua</option>
+            </select>
+        </div>
+        <button id = "addBlog">Create blog</button>
+    </form>
+</div>
+
+<script src="./main.js"></script>

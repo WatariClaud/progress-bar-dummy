@@ -1,0 +1,85 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#alert-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    border: 1px solid #000;
+    height: 30px;
+    z-index: 1;
+    background: rgb(90, 0, 53);
+    text-align: center;
+    padding-top: 20px;
+}
+#container {
+    font-size: '1em';
+    position: relative;
+    width: 70%;
+    margin: 80px auto;
+    margin-bottom: 0;
+    border: 1px solid #000;
+    padding: 1rem 4rem;
+}
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
+.label-for {
+    background: #000;
+    color: #fff;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+.input-row {
+    margin-top: 3rem;
+}
+.inputfield {
+    padding: 1rem;
+    font-size: inherit;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 350px;
+    margin-top: 10px;
+}
+select {
+    width: 350px;
+    padding: 1rem;
+    font-size: inherit;
+}
+option {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    background: #000;
+    border: #000 1px solid;
+    color: #fff;
+    opacity: 0.8;
+    cursor: pointer;
+    margin-top: 4rem;
+    transition: 1s all;
+    width: 350px;
+}
+button:hover {
+    opacity: 0.9;
+}
+button:focus {
+    outline: none;
+}
+
+.red {
+    border: rgb(255, 0, 0);
+}
+.green {
+    color: rgb(0, 126, 0);
+}
