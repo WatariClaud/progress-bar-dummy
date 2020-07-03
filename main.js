@@ -4,6 +4,7 @@ const labelFor = document.querySelector('.label-for');
 const county = document.querySelector('#input-county');
 const submit = document.querySelector('#addBlog');
 const _alert = document.querySelector('#alert-container');
+const form = document.querySelector('.dummy-form');
 
 
 const showProgress = () => {
@@ -19,6 +20,10 @@ const showProgress = () => {
         _alert.textContent = `Creating your blog: ${width * 1 }%`;
         if(width === 100) {
             _alert.textContent = 'Your blog is ready to view.'
+            labelFor.textContent = 'Add photo';
+            name.placeholder = 'Enter name for your blog';
+            county.options[0].textContent = 'Select county';
+            form.reset();
         }
       }
     }
