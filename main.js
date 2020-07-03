@@ -1,5 +1,6 @@
 const blogImage = document.querySelectorAll('.d-none')[1];
 const name = document.querySelector('.inputfield');
+const labelFor = document.querySelector('.label-for');
 const county = document.querySelector('#input-county');
 const submit = document.querySelector('#addBlog');
 const _alert = document.querySelector('#alert-container');
@@ -23,15 +24,21 @@ const showProgress = () => {
 const checkInput = (event) => {
     event.preventDefault();
     if(blogImage.files.length === 0) {
+        labelFor.textContent = 'Image is required';
+        labelFor.scrollIntoView();
         _alert.classList.remove('d-none'); _alert.textContent = 'No file selected';
         return false;
     }
     if(!name.value) {
         _alert.classList.remove('d-none'); _alert.textContent = 'Enter a name';
+        name.placeholder = 'Blog name is required';
+        name.scrollIntoView();
         return false;
     }
     if(county.options[county.selectedIndex].value === 'null') {
         _alert.classList.remove('d-none'); _alert.textContent = 'Select a county';
+        county.options[0].textContent = 'County is required'
+        county.scrollIntoView();
         return false;
     }
     showProgress();
